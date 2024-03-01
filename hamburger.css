@@ -3,12 +3,12 @@
     --foreground: rgb(221, 169, 13);
     --background: white;
     --color: white;
-    --checked-color: rgb(8, 36, 46);
+    --checked-color: rgb(221, 169, 13);
     --animation-timing: 300ms ease-in-out;
     --gap: 4px;
     --bar-height: 2px;
-    --top-margin: 4px;
-    --left-margin: 150px;
+    --top-margin: 7px;
+    --right-margin: 10px;
     --bar-width: 30px;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--gap) * 2);
 }
@@ -23,7 +23,7 @@
     cursor: pointer;
     position: absolute;
     top: var(--top-margin);
-    left: var(--left-margin);
+    right: var(--right-margin);
 }
 
 .hamburger-menu::before,
@@ -54,7 +54,9 @@
 
 .hamburger-menu:has(input:checked) + .nav-bar {
     translate: 0;
-    background-color: #377549;
+    /* background-color: #377549; */
+    /* display: flex; */
+    position: relative;
 }
 
 .hamburger-menu:has(input:checked) + .logoContainer {
